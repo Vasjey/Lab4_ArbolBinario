@@ -1,0 +1,160 @@
+Sat Apr 25 04:36:42 PM UTC 2026: 
+ treemap.c | 9 ++++++---
+ 1 file changed, 6 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:4:
+treemap.c: In function ‘mapa’:
+treemap.c:46:28: error: expected declaration specifiers before ‘malloc’
+   46 |     TreeMap *mapa(TreeMap*)malloc(sizeof(TreeMap));
+      |                            ^~~~~~
+treemap.c:47:5: error: expected declaration specifiers before ‘if’
+   47 |     if(mapa==NULL)return NULL;
+      |     ^~
+treemap.c:48:5: error: expected declaration specifiers before ‘mapa’
+   48 |     mapa->root-NULL;
+      |     ^~~~
+treemap.c:49:5: error: expected declaration specifiers before ‘mapa’
+   49 |     mapa->current=NULL;
+      |     ^~~~
+treemap.c:50:5: error: expected declaration specifiers before ‘mapa’
+   50 |     mapa->lower_than=lower_than;
+      |     ^~~~
+treemap.c:51:5: error: expected declaration specifiers before ‘return’
+   51 |     return mapa;
+      |     ^~~~~~
+treemap.c:52:1: error: expected declaration specifiers before ‘}’ token
+   52 | }
+      | ^
+treemap.c:58:49: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   58 | Pair * searchTreeMap(TreeMap * tree, void* key) {
+      |                                                 ^
+treemap.c:67:61: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   67 | void insertTreeMap(TreeMap * tree, void* key, void * value) {
+      |                                                             ^
+treemap.c:76:33: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   76 | TreeNode * minimum(TreeNode * x){
+      |                                 ^
+treemap.c:89:49: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   89 | void removeNode(TreeMap * tree, TreeNode* node) {
+      |                                                 ^
+treemap.c:93:45: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   93 | void eraseTreeMap(TreeMap * tree, void* key){
+      |                                             ^
+treemap.c:107:37: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  107 | Pair * firstTreeMap(TreeMap * tree) {
+      |                                     ^
+treemap.c:111:36: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  111 | Pair * nextTreeMap(TreeMap * tree) {
+      |                                    ^
+treemap.c:120:46: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  120 | Pair * upperBound(TreeMap * tree, void* key) {
+      |                                              ^
+test.c:6:34: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+    6 | char * _strdup(const char * str) {
+      |                                  ^
+test.c:13:1: error: parameter ‘test_id’ is initialized
+   13 | int test_id = -1;
+      | ^~~
+test.c:16:14: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   16 | int success(){
+      |              ^
+test.c:21:24: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   21 | void err_msg(char* msg){
+      |                        ^
+test.c:28:23: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   28 | void ok_msg(char* msg){
+      |                       ^
+test.c:34:25: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   34 | void info_msg(char* msg){
+      |                         ^
+test.c:42:2: error: storage class specified for parameter ‘Palabra’
+   42 | }Palabra;
+      |  ^~~~~~~
+test.c:44:1: error: expected declaration specifiers before ‘Palabra’
+   44 | Palabra* creaPalabra(int id, char* word){
+      | ^~~~~~~
+test.c:52:43: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   52 | int lower_than_int(void* key1, void* key2){
+      |                                           ^
+test.c:58:26: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   58 | TreeMap* initializeTree(){
+      |                          ^
+test.c:76:19: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+   76 | int create_test1(){
+      |                   ^
+test.c:101:32: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  101 | int search_test1(TreeMap* tree){ //key se encuentra en raiz
+      |                                ^
+test.c:120:32: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  120 | int search_test2(TreeMap* tree){ //key en root->right
+      |                                ^
+test.c:139:32: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  139 | int search_test3(TreeMap* tree){ //key en root->right->left
+      |                                ^
+test.c:159:32: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  159 | int search_test4(TreeMap* tree){ //key no existe
+      |                                ^
+test.c:173:32: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  173 | int insert_test1(TreeMap* tree){//dato repetido
+      |                                ^
+test.c:187:19: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  187 | int insert_test2(){
+      |                   ^
+test.c:223:19: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  223 | int minimum_test(){
+      |                   ^
+test.c:262:18: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  262 | int erase_test1(){//nodo sin hijos
+      |                  ^
+test.c:276:18: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  276 | int erase_test2(){//nodo con un hijo
+      |                  ^
+test.c:297:18: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  297 | int erase_test3(){//nodo con dos hijos
+      |                  ^
+test.c:317:32: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  317 | int first_test1(TreeMap * tree){
+      |                                ^
+test.c:333:18: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  333 | int first_test2(){ //debes iterar
+      |                  ^
+test.c:351:17: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  351 | int next_test1(){ //caso1: current tiene hijo derecho
+      |                 ^
+test.c:376:17: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  376 | int next_test2(){ //caso1: current tiene hijo derecho
+      |                 ^
+test.c:405:17: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  405 | int next_test3(){ //caso2: current sin hijo derecho
+      |                 ^
+test.c:425:28: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  425 | int ub_test1(TreeMap* tree){ //el dato existe
+      |                            ^
+test.c:445:28: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  445 | int ub_test2(TreeMap* tree){
+      |                            ^
+test.c:466:28: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  466 | int ub_test3(TreeMap* tree){
+      |                            ^
+test.c:487:28: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  487 | int ub_test4(TreeMap* tree){
+      |                            ^
+test.c:503:36: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+  503 | int main( int argc, char *argv[] ) {
+      |                                    ^
+treemap.c:46:14: error: old-style parameter declarations in prototyped function definition
+   46 |     TreeMap *mapa(TreeMap*)malloc(sizeof(TreeMap));
+      |              ^~~~
+test.c:607: error: expected ‘{’ at end of input
+test.c:606:1: error: no return statement in function returning non-void [-Werror=return-type]
+  606 | }
+      | ^
+test.c: In function ‘createTreeMap’:
+test.c:606:1: error: expected declaration or statement at end of input
+test.c:607: error: control reaches end of non-void function [-Werror=return-type]
+treemap.c: At top level:
+treemap.c:46:14: error: ‘mapa’ defined but not used [-Werror=unused-function]
+   46 |     TreeMap *mapa(TreeMap*)malloc(sizeof(TreeMap));
+      |              ^~~~
+cc1: all warnings being treated as errors
+84847aa
