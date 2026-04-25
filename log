@@ -412,3 +412,17 @@ Sat Apr 25 08:32:31 PM UTC 2026:
  tests:  20|3
 total_score: 30/60
 ba19a03
+Sat Apr 25 09:12:37 PM UTC 2026: 
+ treemap.c | 18 +++++++++++++++++-
+ 1 file changed, 17 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:90:51: error: expected ‘)’ before ‘parent’
+   90 |         if(tree->lower_than(key,parent->pair->key)parent->left=nuevo;
+      |           ~                                       ^~~~~~
+      |                                                   )
+treemap.c:92:5: error: expected expression before ‘}’ token
+   92 |     }
+      |     ^
+b009f80
