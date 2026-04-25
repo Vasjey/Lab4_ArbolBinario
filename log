@@ -358,3 +358,20 @@ treemap.c:66:21: error: ‘TreeMap’ has no member named ‘rigth’
    66 |         else aux=aux->rigth;
       |                     ^~
 2d6e004
+Sat Apr 25 05:33:52 PM UTC 2026: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:61:12: error: too few arguments to function ‘is_equal’
+   61 |         if(is_equal(key,aux->pair->key)){
+      |            ^~~~~~~~
+treemap.c:24:5: note: declared here
+   24 | int is_equal(TreeMap* tree, void* key1, void* key2){
+      |     ^~~~~~~~
+treemap.c:66:23: error: ‘TreeNode’ has no member named ‘rigth’; did you mean ‘right’?
+   66 |         else aux=aux->rigth;
+      |                       ^~~~~
+      |                       right
+4b999f9
