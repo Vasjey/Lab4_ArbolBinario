@@ -83,6 +83,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
 // Si x no tiene hijo izquierdo se retorna el mismo nodo.
 
 TreeNode * minimum(TreeNode * x){
+    if(x==NULL)return NULL;
     while(x->left != NULL)x=x->left;
     return x;
 }
@@ -114,6 +115,9 @@ void eraseTreeMap(TreeMap * tree, void* key){
 // Recuerde actualizar este puntero.
 
 Pair * firstTreeMap(TreeMap * tree) {
+    TreeNode *primero=minimum(tree->root);
+    tree->current=primero;
+    if(primero !=NULL)return primero->pair;
     return NULL;
 }
 
