@@ -159,7 +159,6 @@ Pair * firstTreeMap(TreeMap * tree) {
     if(primero !=NULL)return primero->pair;
     return NULL;
 }
-
 Pair * nextTreeMap(TreeMap * tree) {
     TreeNode *aux=tree->current;
     if(aux->right != NULL){
@@ -183,6 +182,23 @@ Pair * nextTreeMap(TreeMap * tree) {
 // Finalmente retorne el par del nodo ub_node.
 
 Pair * upperBound(TreeMap * tree, void* key) {
+    TreeNode *aux=tree->root;
+    TreeNode *ub_nodo=NULL;
+    while(aux != NULL){
+        if(is_equal(tree,key,aux->pair->key)){
+            tree->current=aux;
+            return aux->pair;
+            }
+        if(tree->lower_than(key, aux->pair->key)){
+            ub_nodo=aux;
+            aux=aux->left;
+            }
+        else aux=aux->rigth;
+    }
+    if(ub_nodo != NULL){
+        tree->current=ub_nodo;
+        return ub_nodo->pair;
+        }
     return NULL;
 }
 
